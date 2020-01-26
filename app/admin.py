@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Notice
+from .models import Notice,Branch
 # Register your models here.
 
 
@@ -11,3 +11,4 @@ class Admin(admin.ModelAdmin):
     
 
 admin.site.register(Notice,Admin)
+admin.site.register(Branch)
