@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if notices %}
+
+<h2>{{ notices.subject }}</h2>
+<p> {{ notices.message }}</p>
+
+<p> {{ notices.date }}</p>
+
+{% endif %}
+
+{% endblock %}
